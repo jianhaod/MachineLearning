@@ -7,3 +7,4 @@ Part 1. Classfication
 1.1	KNN
 1.2	Decision Tree
 1.3 Native Bayes
+1.4 Logistic Regression
