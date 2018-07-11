@@ -9,3 +9,6 @@ Part 1. Classfication
 1.3 Native Bayes
 1.4 Logistic Regression
 1.5 SVM
+
+Part 2. Regression
+2.1 Linear Regression
