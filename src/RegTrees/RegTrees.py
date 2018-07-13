@@ -167,6 +167,44 @@ class treeNode():
         rightBranch = right
         leftBranch = left
 
+def regTreeEval(model, inDat):
+
+    return float(model)
+
+def modelTreeEval(model, inDat):
+    
+    n = shape(inDat)[1]
+    X = mat(ones((1, n + 1)))
+    X[:, 1:n + 1] = inDat
+    return float(X * model)
+
+def treeForeCast(tree, inData, modelEval = regTreeEval):
+
+    if not isTree(tree):
+        return modelTreeEval(tree, inData)
+
+    if inData[0, tree['spInd']] > tree['spVal']:
+        if isTree(tree['left']):
+            return treeForeCast(tree['left', inData, modelEval])
+        else:
+            return modelEval(tree['left'], inData)
+    else:
+        if isTree(tree['right']):
+            return treeForeCast(tree['right', inData, modelEval])
+        else:
+            return modelEval(tree['right'], inData)
+
+def createForeCast(tree, testData, modelEval = regTreeEval):
+    
+    m = len(testData)
+    yHat = mat(zeros((m, 1)))
+
+    for i in range(m):
+        yHat[i, 0] = treeForeCast(tree, mat(testData[i]), modelEval)
+
+    return yHat
+
+
 if __name__ == '__main__':
 
     testMat = mat(eye(4))
@@ -198,5 +236,11 @@ if __name__ == '__main__':
     myMat3 = mat(myDat3)
     result = createTree(myMat3, modelLeaf, modelErr, ops = (1, 10))
     print result
+
+    trainMat = mat(loadDataSet('../../data/RegTrees/bikeSpeedVsIq_train.txt'))
+    testMat = mat(loadDataSet('../../data/RegTrees/bikeSpeedVsIq_test.txt'))
+    myTree = createTree(trainMat, ops = (1, 20))
+    yHat = createForeCast(myTree, testMat[:, 0])
+    corrcoef(yHat, testMat[:, 1], rowvat = 0)[0, 1]
 
 
