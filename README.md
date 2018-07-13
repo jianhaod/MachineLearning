@@ -13,3 +13,6 @@ Part 1. Classfication
 Part 2. Regression
 2.1 Linear Regression
 2.2 Regression Tree
+
+Part 3. Unsupervised
+3.1 K-Means
