@@ -16,3 +16,4 @@ Part 2. Regression
 
 Part 3. Unsupervised
 3.1 K-Means
+3.2 Apriori
