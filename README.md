@@ -18,3 +18,6 @@ Part 3. Unsupervised
 3.1 K-Means  
 3.2 Apriori  
 3.3 FPGrowth  
+  
+Part 4. Others  
+4.1 PCA  
