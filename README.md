@@ -21,3 +21,4 @@ Part 3. Unsupervised
   
 Part 4. Others  
 4.1 PCA  
+4.2 SVD  
