@@ -1,6 +1,42 @@
 Machine Learning in Action  
 (Implementation with Python v2.7 and Anaconda environment)  
-  
+
+Deep Learning in Action  
+(Implementation 21 project with Python v2.7 and Tensorflow 1.1.0 environment)
+
+Repo Structure:  
+/  
+├── DL  
+│   └── src  
+├── ML  
+│   ├── data  
+│   │   ├── AdaBoost  
+│   │   ├── Apriori  
+│   │   ├── KMeans  
+│   │   ├── KNN  
+│   │   ├── LogisticReg  
+│   │   ├── NaiveBayes  
+│   │   ├── PCA  
+│   │   ├── Regression  
+│   │   ├── RegTrees  
+│   │   └── SVM  
+│   └── src  
+│       ├── AdaBoost  
+│       ├── Apriori  
+│       ├── DecisionTree  
+│       ├── FPGrowth  
+│       ├── KMeans  
+│       ├── KNN  
+│       ├── LogisticReg  
+│       ├── NaiveBayes  
+│       ├── PCA  
+│       ├── Regression  
+│       ├── RegTrees  
+│       ├── SVD  
+│       └── SVM  
+└── README.md  
+
+
 Brief Contents  
   
 Part 1. Classfication  
@@ -22,3 +58,6 @@ Part 3. Unsupervised
 Part 4. Others  
 4.1 PCA  
 4.2 SVD  
+
+Part 5. Deep Learning  
+5.1 MNIST  
