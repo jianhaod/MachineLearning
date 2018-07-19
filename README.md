@@ -5,37 +5,39 @@ Deep Learning in Action
 (Implementation 21 project with Python v2.7 and Tensorflow 1.1.0 environment)
 
 Repo Structure:  
-/  
-├── DL  
-│   └── src  
-├── ML  
-│   ├── data  
-│   │   ├── AdaBoost  
-│   │   ├── Apriori  
-│   │   ├── KMeans  
-│   │   ├── KNN  
-│   │   ├── LogisticReg  
-│   │   ├── NaiveBayes  
-│   │   ├── PCA  
-│   │   ├── Regression  
-│   │   ├── RegTrees  
-│   │   └── SVM  
-│   └── src  
-│       ├── AdaBoost  
-│       ├── Apriori  
-│       ├── DecisionTree  
-│       ├── FPGrowth  
-│       ├── KMeans  
-│       ├── KNN  
-│       ├── LogisticReg  
-│       ├── NaiveBayes  
-│       ├── PCA  
-│       ├── Regression  
-│       ├── RegTrees  
-│       ├── SVD  
-│       └── SVM  
-└── README.md  
-
+./
+├── DL
+│   ├── data
+│   │   └── mnist_data
+│   └── src
+│       └── MNIST
+├── ML
+│   ├── data
+│   │   ├── AdaBoost
+│   │   ├── Apriori
+│   │   ├── KMeans
+│   │   ├── KNN
+│   │   ├── LogisticReg
+│   │   ├── NaiveBayes
+│   │   ├── PCA
+│   │   ├── Regression
+│   │   ├── RegTrees
+│   │   └── SVM
+│   └── src
+│       ├── AdaBoost
+│       ├── Apriori
+│       ├── DecisionTree
+│       ├── FPGrowth
+│       ├── KMeans
+│       ├── KNN
+│       ├── LogisticReg
+│       ├── NaiveBayes
+│       ├── PCA
+│       ├── Regression
+│       ├── RegTrees
+│       ├── SVD
+│       └── SVM
+└── README.md
 
 Brief Contents  
   
